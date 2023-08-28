@@ -1,0 +1,23 @@
+﻿@model Account
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1 class="text-center pt-5 pb-3">LogIN</h1>
+
+<h4>login to enjoy full experience</h4>
+<hr />
+<div class="container"></div>
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Password" class="form-label"></label>
+        <input asp-for="Password" type="password" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary my-3">Login</button>
+    <a href="/account/regist" class="btn btn-primary">Go To Regist</a>
+</form>

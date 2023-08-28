@@ -1,0 +1,22 @@
+﻿@model QVision_Task.Models.Product
+
+@{
+    ViewData["Title"] = "AddProduct";
+}
+
+<h1 class="text-center pt-5 pb-3">Product Details</h1>
+
+<h4>Product Details</h4>
+<hr />
+<div class="container">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Name</h5>
+            <h6 class="card-subtitle mb-2 text-muted">@Model.Description</h6>
+            <p class="card-text">Price: @Model.Price</p>
+            <p class="card-text">Quantity: @Model.StockQuantity</p>
+            <a class="btn btn-primary my-3" asp-action="AllProducts" asp-controller="Product">Back to List</a>
+
+        </div>
+    </div>
+</div>
